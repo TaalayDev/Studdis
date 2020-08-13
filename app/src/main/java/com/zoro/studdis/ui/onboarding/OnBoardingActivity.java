@@ -2,13 +2,13 @@ package com.zoro.studdis.ui.onboarding;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.ButtonBarLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.rd.PageIndicatorView;
 import com.zoro.studdis.R;
+import com.zoro.studdis.ui.login.LoginActivity;
 
 public class OnBoardingActivity extends AppCompatActivity {
     ViewPager viewPager;
@@ -26,8 +27,8 @@ public class OnBoardingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_onboarding);
-        initViews();
 
+        initViews();
 
     }
 
@@ -38,11 +39,11 @@ public class OnBoardingActivity extends AppCompatActivity {
         pageIndicatorView.setCount(4); // specify total count of indicators
         viewPager = findViewById(R.id.boarding_viewpager);
         textView = findViewById(R.id.skipButton);
-        buttonSkip = findViewById(R.id.skipButton);
-        buttonSkip.setOnClickListener(new View.OnClickListener() {
+        // buttonSkip = findViewById(R.id.skipButton);
+        textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(OnBoardingActivity.this, LoginActivity.class));
             }
         });
         viewPager.setAdapter(new OnBoardingPagerAdapter(getSupportFragmentManager()));

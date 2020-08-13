@@ -50,4 +50,5 @@
         app:piv_selectedColor="@color/selectedDotsColor"
         app:piv_unselectedColor="@color/defaultDotsColor"
         app:piv_viewPager="@id/boarding_viewpager" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,13 @@
     <color name="colorDarkBlue">#07346A</color>
     <color name="colorAppBar">#FFFFFF</color>
 
+
+    <color name="mainTextColor">#07346A</color>
+    <color name="selectedDotsColor">#715FDE</color>
+    <color name="defaultDotsColor">#C4C4C4</color>
+    <color name="skipColorText">#CAD6E4</color>
+    <color name="colorGray">#999999</color>
     <color name="colorRed">#FF0000</color>
+    <color name="colorWhite">#FFFFFF</color>
 
 </resources>

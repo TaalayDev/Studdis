@@ -29,6 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include2"
         app:tabIndicatorColor="#4EA0EC"
+        app:tabIndicatorHeight="4dp"
         app:tabSelectedTextColor="@color/colorDarkBlue"
         app:tabTextColor="@android:color/darker_gray">
 
