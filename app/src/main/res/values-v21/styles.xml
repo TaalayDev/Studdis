@@ -11,4 +11,9 @@
         <item name="contentInsetEnd">0dp</item>
     </style>
 
+    <style name="NoActionBar" parent="Theme.AppCompat.Light.NoActionBar" tools:ignore="ResourceCycle">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
 </resources>

@@ -10,6 +10,22 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+    //onBoarding texts
+    <string name="skip">Пропустить</string>
+    <string name="frag1">Добро пожаловать в \n
+        Teach Smarter</string>
+    <string name="frag1desc">Это первый шаг в дистанционное обучение для вашего ребенка, со всеми удобствами и легким интерфейсом</string>
+    <string name="frag2">Все удобства для вашего обучения </string>
+    <string name="frag2desc">Здесь вы найдете все удобства для онлайн обучения, такие как расписание, оценки, новости школы, чаты с учителями и учениками, и т.д. </string>
+    <string name="frag3"> Отдельный раздел для родителей</string>
+    <string name="frag3desc">Если вы родитель, для вас есть отдельный раздел где вы сможете наблюдать за учебным планом вашего ребенка, его оценками, и многое другое </string>
+    <string name="frag4">Изучите все функции для удобства</string>
+    <string name="frag4desc">Чтобы удобно пользоваться всеми функциями приложения, изучите все разделы как можно скорее.\n
+        Добро пожаловать!</string>
+    <string name="start">Начать</string>
+
+    //
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -29,4 +45,5 @@
     <string name="tab_timetable">Расписание</string>
     <string name="tab_assessment">Оценка</string>
     <string name="tab_events">Мероприятия</string>
+
 </resources>
