@@ -46,4 +46,20 @@
     <string name="tab_assessment">Оценка</string>
     <string name="tab_events">Мероприятия</string>
 
+
+
+    <string name="name">Имя</string>
+    <string name="surnameTV">Фамилия</string>
+    <string name="statusTV">Кем вы являетесь?</string>
+    <string name="newPass">Введите новый пароль</string>
+    <string name="confirmNewPass">Подтвердите новый пароль</string>
+    <string name="mailTV">Ваш почтовый адрес</string>
+    <string name="saver">Сохранить</string>
+    <string name="teach_smarterTV">Teach Smarter</string>
+    <string name="login">Войти</string>
+    <string name="forgotpass">Забыли пароль?</string>
+    <string name="register">Регистрация</string>
+    <string name="fingerTV">Приложите ваш палец \nчтобы войти в свой кабинет</string>
+    <string name="questionanswer">Вопросы - Ответы</string>
+
 </resources>
