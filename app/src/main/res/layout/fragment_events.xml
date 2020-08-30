@@ -6,18 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.fragments.assessment.AssessmentFragment">
 
-    <TextView
-        android:id="@+id/text_events"
+    <FrameLayout
+        android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/eventsTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E6C4BCE6"
+            app:tabIndicator="@null"
+            app:tabSelectedTextColor="@color/colorDarkBlue"
+            app:tabTextColor="#8E8B8B">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/eventsTabItem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Классные" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/eventsTabItem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Общие" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="?android:attr/listDivider" />
+
+    </FrameLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/evRecyclerV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0091EA"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+    </ViewFlipper>
+    
 </androidx.constraintlayout.widget.ConstraintLayout>

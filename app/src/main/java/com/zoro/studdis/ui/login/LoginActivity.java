@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.zoro.studdis.R;
-import com.zoro.studdis.ui.login.UI.RegisterActivity;
+// import com.zoro.studdis.ui.login.UI.RegisterActivity;
 import com.zoro.studdis.ui.main.MainActivity;
 
 public class LoginActivity extends AppCompatActivity {
@@ -23,22 +23,22 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         initUI();
         initdate();
-
+        startActivity(new Intent(LoginActivity.this, MainActivity.class));
     }
 
     private void initdate() {
-        registerTV.setOnClickListener(new View.OnClickListener() {
+        /*registerTV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
-                startActivity(intent);
+                // Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                // startActivity(intent);
             }
-        });
+        });*/
     }
 
     private void initUI() {
-        loginBtn = findViewById(R.id.loginBtn);
-        registerTV = findViewById(R.id.registerTV);
+        // loginBtn = findViewById(R.id.loginBtn);
+        // registerTV = findViewById(R.id.registerTV);
     }
 
 }

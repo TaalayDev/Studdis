@@ -108,11 +108,12 @@ public class QReaderFragment extends Fragment implements QRCodeReaderView.OnQRCo
         }
 
         if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            Snackbar.make(qrReaderFragmentMainLayout, "Camera permission was granted.", Snackbar.LENGTH_SHORT).show();
+            Snackbar.make(qrReaderFragmentMainLayout,
+                    "Camera permission was granted.", Snackbar.LENGTH_SHORT).show();
             initQRCodeReaderView();
         } else {
-            Snackbar.make(qrReaderFragmentMainLayout, "Camera permission request was denied.", Snackbar.LENGTH_SHORT)
-                    .show();
+            Snackbar.make(qrReaderFragmentMainLayout,
+                    "Camera permission request was denied.", Snackbar.LENGTH_SHORT).show();
         }
     }
 

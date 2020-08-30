@@ -17,4 +17,6 @@
     <color name="colorRed">#FF0000</color>
     <color name="colorWhite">#FFFFFF</color>
 
+    <color name="evCardBgColor">#F9F8FF</color>
+
 </resources>
